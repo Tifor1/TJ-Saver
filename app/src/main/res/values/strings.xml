@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TJ Saver</string>
+    <string name="all">All</string>
+    <string name="fb">FB</string>
+    <string name="fb_reels">FB Reels</string>
+    <string name="tiktok">TK</string>
+    <string name="save_all_video_without_watermark">Save All Video Without Watermark</string>
+</resources>

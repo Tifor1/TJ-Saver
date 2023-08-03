@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#4CAF50"
+        android:elevation="7dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,UnusedAttribute" />
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <ImageView
+        android:id="@+id/youtube"
+        android:layout_width="@dimen/_40mdp"
+        android:layout_height="@dimen/_40mdp"
+        android:layout_marginStart="@dimen/_20mdp"
+        android:background="@drawable/bg"
+        android:paddingStart="@dimen/_5mdp"
+        android:paddingEnd="@dimen/_5mdp"
+        android:src="@drawable/ic_downloader"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/facebook"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription,MissingConstraints,RtlCompat" />
+
+    <ImageView
+        android:id="@+id/facebook"
+        android:layout_width="@dimen/_40mdp"
+        android:layout_height="@dimen/_40mdp"
+        android:layout_marginStart="@dimen/_20mdp"
+        android:background="@drawable/bg"
+        android:paddingStart="@dimen/_5mdp"
+        android:paddingEnd="@dimen/_5mdp"
+        android:src="@drawable/facebook"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/facebookReels"
+        app:layout_constraintStart_toEndOf="@id/youtube"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription,MissingConstraints,RtlCompat" />
+
+
+    <ImageView
+        android:id="@+id/facebookReels"
+        android:layout_width="@dimen/_40mdp"
+        android:layout_height="@dimen/_40mdp"
+        android:layout_marginStart="@dimen/_20mdp"
+        android:background="@drawable/bg"
+        android:paddingStart="@dimen/_5mdp"
+        android:paddingEnd="@dimen/_5mdp"
+        android:src="@drawable/facebook"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tiktok"
+        app:layout_constraintStart_toEndOf="@id/facebook"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription,MissingConstraints,RtlCompat" />
+
+
+    <ImageView
+        android:id="@+id/tiktok"
+        android:layout_width="@dimen/_40mdp"
+        android:layout_height="@dimen/_40mdp"
+        android:layout_marginStart="@dimen/_20mdp"
+        android:background="@drawable/bg"
+        android:paddingStart="@dimen/_5mdp"
+        android:paddingEnd="@dimen/_5mdp"
+        android:src="@drawable/tiktok"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/facebookReels"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription,MissingConstraints,RtlCompat" />
+
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_all_video_without_watermark"
+        android:textSize="@dimen/_15font_mdp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@id/facebook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/ytText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/all"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@id/youtube"
+        app:layout_constraintStart_toStartOf="@id/youtube"
+        app:layout_constraintTop_toBottomOf="@id/youtube" />
+
+
+    <TextView
+        android:id="@+id/fbText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fb"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@id/facebook"
+        app:layout_constraintStart_toStartOf="@id/facebook"
+        app:layout_constraintTop_toBottomOf="@id/facebook" />
+
+
+    <TextView
+        android:id="@+id/fbReelsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fb_reels"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@id/facebookReels"
+        app:layout_constraintStart_toStartOf="@id/facebookReels"
+        app:layout_constraintTop_toBottomOf="@id/facebookReels" />
+
+
+    <TextView
+        android:id="@+id/tikText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tiktok"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@id/tiktok"
+        app:layout_constraintStart_toStartOf="@id/tiktok"
+        app:layout_constraintTop_toBottomOf="@id/tiktok" />
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageButton
+            android:id="@+id/webViewBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15mdp"
+            android:layout_marginBottom="@dimen/_30mdp"
+            android:background="@drawable/bg"
+            android:src="@drawable/ic_back"
+            android:paddingStart="@dimen/_20mdp"
+            android:paddingEnd="@dimen/_20mdp"
+            android:paddingTop="@dimen/_5mdp"
+            android:paddingBottom="@dimen/_5mdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/webViewforward"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/webViewforward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15mdp"
+            android:layout_marginBottom="@dimen/_30mdp"
+            android:background="@drawable/bg"
+            android:src="@drawable/ic_forward"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingStart="@dimen/_20mdp"
+            android:paddingEnd="@dimen/_20mdp"
+            android:paddingTop="@dimen/_5mdp"
+            android:paddingBottom="@dimen/_5mdp"
+            app:layout_constraintStart_toEndOf="@id/webViewBack"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

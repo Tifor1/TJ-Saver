@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<defaultsMap xmlns:android="http://schemas.android.com/apk/res/android">
+    <entry>
+        <key>your_parameter_key_1</key>
+        <value>default_value_1</value>
+    </entry>
+    <entry>
+        <key>your_parameter_key_2</key>
+        <value>default_value_2</value>
+    </entry>
+    <!-- Add more entries for other parameters if needed -->
+</defaultsMap>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "909808474953",
+    "project_id": "tj-saver",
+    "storage_bucket": "tj-saver.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909808474953:android:9a79c933669318b0915898",
+        "android_client_info": {
+          "package_name": "tjsaver.tifor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "909808474953-ql4ga5rq3jbjdnspdl8tkf5be1pcgfos.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4hLX76hrTVx8VTDmOLn3sownPSiOztbY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "909808474953-ql4ga5rq3jbjdnspdl8tkf5be1pcgfos.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
